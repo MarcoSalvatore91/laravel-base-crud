@@ -1,10 +1,9 @@
 @extends('layouts.main')
 
-@section('title', 'Comics')
+@section('title', 'Comic')
 
 @section('content')
 
-@foreach ($comics as $comic)
 <p>{{ $comic->title }}</p>
 <p>{{ $comic->description }}</p>
 <img src="{{ $comic->thumb }}" alt="">
@@ -12,7 +11,5 @@
 <p>{{ $comic->series}}</p>
 <p>{{ $comic->sale_date }}</p>
 <p>{{ $comic->type }}</p>
-<a href="{{ route('comic.show', $comic->id) }}">Clicca</a>
-@endforeach
 
 @endsection
