@@ -1,0 +1,14 @@
+@import "vars";
+
+a {
+    color: black;
+}
+
+.container-small {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bg-grey {
+    background-color: $gray;
+}
