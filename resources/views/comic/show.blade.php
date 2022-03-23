@@ -20,6 +20,7 @@
 </div>
 
 <div class="d-flex justify-content-end me-5 mt-5">
+    <a class="pe-2" href="{{ route('comic.edit', $comic->id) }}">MODIFICA</a>
     <a href="{{ route('comic.index') }}">INDIETRO</a>
 </div>
 
