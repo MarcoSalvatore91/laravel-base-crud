@@ -14,6 +14,14 @@
             <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}" width="200px" height="300px">
             <p>{{ $comic->title }}</p>
             <a href="{{ route('comic.show', $comic->id) }}">SCOPRI DI PIU'</a>
+
+            <form action="{{ route('comic.destroy', $comic->id) }}" method="POST">
+                @csrf
+
+                @method('DELETE')
+
+                <input type="submit" value="ELIMINA" />
+            </form>
         </div>
         @endforeach
     </div>
